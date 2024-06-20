@@ -1,6 +1,8 @@
 import { Inter } from "next/font/google";
 import "./globals.css";
 import StoreProvider from "./StoreProvider";
+import 'react-toastify/dist/ReactToastify.css';
+import { ToastContainer } from "react-toastify";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -16,6 +18,7 @@ export default function RootLayout({ children }) {
         <body className={inter.className}>
           <main className="min-h-screen flex-col items-center justify-between p-24">
             {children}
+            <ToastContainer />
           </main>
         </body>
       </html>

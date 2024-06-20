@@ -5,8 +5,9 @@ import { useSearchParams } from 'next/navigation'
 const FormPage = () => {
   const searchParams = useSearchParams()
   const uid = searchParams.get('uid')
+  const isView = searchParams.get('view')
   return (
-    <Form id={uid} />
+    <Form id={uid} isView={isView} />
   )
 }
 
