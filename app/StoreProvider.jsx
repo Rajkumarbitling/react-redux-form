@@ -9,7 +9,6 @@ export default function StoreProvider({ children }) {
   if (!storeRef.current) {
     // Create the store instance the first time this renders
     storeRef.current = makeStore()
-    // storeRef.current.dispatch(formSlice())
   }
 
   return <Provider store={storeRef.current}>{children}</Provider>
