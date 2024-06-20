@@ -6,7 +6,7 @@ import { useRouter } from "next/navigation";
 import { useEffect, useId } from "react";
 import { confirmAlert } from "react-confirm-alert";
 import 'react-confirm-alert/src/react-confirm-alert.css';
-import { ToastContainer, toast } from 'react-toastify';
+import { toast } from 'react-toastify';
 
 const Form = ({ id, isView }) => {
     const { register, handleSubmit, formState: { errors }, reset } = useForm()
